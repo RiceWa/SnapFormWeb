@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #0AD5BB;        /* emerald green - primary accent */
+  --color-brand-hover: #6ee7b7;  /* lighter green - hover state */
+  --color-bg: #09090b;           /* zinc-950 - page background */
+  --color-surface: #18181b;      /* zinc-900 - card background */
+  --color-border: #27272a;       /* zinc-800 - borders */
+  --color-text: #ffffff;         /* white - primary text */
+  --color-muted: #a1a1aa;        /* zinc-400 - secondary text */
+  --color-subtle: #52525b;       /* zinc-600 - faint text */
+  --color-dark: #09090b;         /* zinc-950 - dark text on light bg */
+}
