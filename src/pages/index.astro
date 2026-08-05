@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-const base = import.meta.env.BASE_URL
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 ---
 
 <BaseLayout title="Home">
@@ -75,9 +75,9 @@ const base = import.meta.env.BASE_URL
   <footer class="border-t border-border px-8 py-8 flex items-center justify-between text-subtle text-sm">
     <span>© 2026 SnapForm. All rights reserved.</span>
     <div class="flex gap-6">
-      <a href={`${base}about`} class="hover:text-text transition-colors">About</a>
-      <a href={`${base}contact`} class="hover:text-text transition-colors">Contact</a>
-      <a href={`${base}pricing`} class="hover:text-text transition-colors">Pricing</a>
+      <a href={`${base}/about`} class="hover:text-text transition-colors">About</a>
+      <a href={`${base}/contact`} class="hover:text-text transition-colors">Contact</a>
+      <a href={`${base}/pricing`} class="hover:text-text transition-colors">Pricing</a>
     </div>
   </footer>
 
